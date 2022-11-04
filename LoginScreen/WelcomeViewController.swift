@@ -1,9 +1,10 @@
 import UIKit
 
-class AfterLoginViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
     
     @IBOutlet weak var userNameLabel: UILabel!
+//    Переменная, которая будет содержать имя пользователя
     var userName = ""
     
     override func viewDidLoad() {
@@ -12,7 +13,7 @@ class AfterLoginViewController: UIViewController {
 
     }
     
-
+//  Функционал кнопки возврата
     @IBAction func returnButtonPressed() {
         dismiss(animated: true)
     }

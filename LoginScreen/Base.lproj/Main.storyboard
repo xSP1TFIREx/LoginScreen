@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="67.938931297709928" y="-28.169014084507044"/>
         </scene>
-        <!--After Login View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="CSf-QR-HnQ">
             <objects>
-                <viewController id="Qbg-aA-HNq" customClass="AfterLoginViewController" customModule="LoginScreen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Qbg-aA-HNq" customClass="WelcomeViewController" customModule="LoginScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MhY-ct-2ea">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,9 +127,11 @@
                     <navigationItem key="navigationItem" id="CGS-aF-vV6"/>
                     <connections>
                         <outlet property="userNameLabel" destination="at8-No-U5J" id="Aoe-5e-8Wf"/>
+                        <segue destination="K7q-Tc-OLa" kind="unwind" unwindAction="unwindFor:" id="B9m-kh-nT9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ot1-ty-oDM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="K7q-Tc-OLa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="956.48854961832058" y="-28.169014084507044"/>
         </scene>

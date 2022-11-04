@@ -13,7 +13,8 @@
 		68A0E29E2915198B0028D216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A0E29C2915198B0028D216 /* Main.storyboard */; };
 		68A0E2A02915198C0028D216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A0E29F2915198C0028D216 /* Assets.xcassets */; };
 		68A0E2A32915198C0028D216 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A0E2A12915198C0028D216 /* LaunchScreen.storyboard */; };
-		68A0E2AB29151D6A0028D216 /* AfterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A0E2AA29151D6A0028D216 /* AfterLoginViewController.swift */; };
+		68A0E2AB29151D6A0028D216 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A0E2AA29151D6A0028D216 /* WelcomeViewController.swift */; };
+		68D48777291550A100E8810F /* Joke.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 68D48776291550A100E8810F /* Joke.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		68A0E29F2915198C0028D216 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68A0E2A22915198C0028D216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68A0E2A42915198C0028D216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68A0E2AA29151D6A0028D216 /* AfterLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLoginViewController.swift; sourceTree = "<group>"; };
+		68A0E2AA29151D6A0028D216 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		68D48776291550A100E8810F /* Joke.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Joke.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +63,12 @@
 				68A0E2962915198B0028D216 /* AppDelegate.swift */,
 				68A0E2982915198B0028D216 /* SceneDelegate.swift */,
 				68A0E29A2915198B0028D216 /* LoginViewController.swift */,
-				68A0E2AA29151D6A0028D216 /* AfterLoginViewController.swift */,
+				68A0E2AA29151D6A0028D216 /* WelcomeViewController.swift */,
 				68A0E29C2915198B0028D216 /* Main.storyboard */,
 				68A0E29F2915198C0028D216 /* Assets.xcassets */,
 				68A0E2A12915198C0028D216 /* LaunchScreen.storyboard */,
 				68A0E2A42915198C0028D216 /* Info.plist */,
+				68D48776291550A100E8810F /* Joke.jpeg */,
 			);
 			path = LoginScreen;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 				68A0E2A32915198C0028D216 /* LaunchScreen.storyboard in Resources */,
 				68A0E2A02915198C0028D216 /* Assets.xcassets in Resources */,
 				68A0E29E2915198B0028D216 /* Main.storyboard in Resources */,
+				68D48777291550A100E8810F /* Joke.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +148,7 @@
 				68A0E29B2915198B0028D216 /* LoginViewController.swift in Sources */,
 				68A0E2972915198B0028D216 /* AppDelegate.swift in Sources */,
 				68A0E2992915198B0028D216 /* SceneDelegate.swift in Sources */,
-				68A0E2AB29151D6A0028D216 /* AfterLoginViewController.swift in Sources */,
+				68A0E2AB29151D6A0028D216 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
