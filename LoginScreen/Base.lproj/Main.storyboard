@@ -22,17 +22,17 @@
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yJ5-Fs-O0K">
                                         <rect key="frame" x="0.0" y="0.0" width="239" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GEd-di-JCa">
                                         <rect key="frame" x="0.0" y="61" width="239" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0IC-5J-ex4">
-                                <rect key="frame" x="20" y="385" width="353" height="34.333333333333314"/>
+                                <rect key="frame" x="20" y="393" width="353" height="34.333333333333314"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJz-89-byb">
                                         <rect key="frame" x="0.0" y="0.0" width="174" height="34.333333333333336"/>
@@ -53,9 +53,9 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gte-MK-yhE">
-                                <rect key="frame" x="125" y="317" width="143" height="42"/>
+                                <rect key="frame" x="125" y="317" width="143" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="gte-MK-yhE" secondAttribute="height" multiplier="143:42" id="Ww0-0f-kpu"/>
+                                    <constraint firstAttribute="width" constant="143" id="jp8-t3-UqZ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log In">
@@ -69,21 +69,20 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gte-MK-yhE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="AwO-bR-hYL"/>
                             <constraint firstItem="0IC-5J-ex4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LBe-qa-VO7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0IC-5J-ex4" secondAttribute="trailing" constant="20" id="PHz-z9-KRs"/>
                             <constraint firstItem="HvC-Af-fm6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="137" id="R5l-eH-fs9"/>
                             <constraint firstItem="0IC-5J-ex4" firstAttribute="top" secondItem="gte-MK-yhE" secondAttribute="bottom" constant="26" id="T1C-QV-CvW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HvC-Af-fm6" secondAttribute="trailing" constant="77" id="V5B-Mf-K4v"/>
+                            <constraint firstItem="gte-MK-yhE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ywy-lw-LIo"/>
                             <constraint firstItem="gte-MK-yhE" firstAttribute="top" secondItem="HvC-Af-fm6" secondAttribute="bottom" constant="26" id="fG1-So-lpf"/>
                             <constraint firstItem="HvC-Af-fm6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="iR2-sm-NBS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gte-MK-yhE" secondAttribute="trailing" constant="125" id="sgZ-ax-aey"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="loginTF" destination="yJ5-Fs-O0K" id="ikE-AA-HMS"/>
                         <outlet property="passwordTF" destination="GEd-di-JCa" id="cfr-cE-qQN"/>
-                        <segue destination="Qbg-aA-HNq" kind="show" identifier="GoToSecondScreen" id="Ftf-QB-ATi"/>
+                        <segue destination="Qbg-aA-HNq" kind="presentation" identifier="GoToNextScreen" id="uVC-Au-UY7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -98,16 +97,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="at8-No-U5J">
-                                <rect key="frame" x="164" y="217" width="64" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="at8-No-U5J">
+                                <rect key="frame" x="20" y="217" width="353" height="32.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99b-Wn-00C">
-                                <rect key="frame" x="122" y="519" width="148" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99b-Wn-00C">
+                                <rect key="frame" x="134.66666666666666" y="523" width="123.99999999999997" height="56"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Return">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
@@ -119,6 +116,13 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fDt-k3-gGn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="at8-No-U5J" firstAttribute="leading" secondItem="fDt-k3-gGn" secondAttribute="leading" constant="20" id="9Y4-c2-a5G"/>
+                            <constraint firstItem="at8-No-U5J" firstAttribute="top" secondItem="fDt-k3-gGn" secondAttribute="top" constant="158" id="AQ1-bW-VMo"/>
+                            <constraint firstItem="99b-Wn-00C" firstAttribute="centerX" secondItem="MhY-ct-2ea" secondAttribute="centerX" id="U9N-P8-wmg"/>
+                            <constraint firstItem="fDt-k3-gGn" firstAttribute="bottom" secondItem="99b-Wn-00C" secondAttribute="bottom" constant="204" id="aOu-nW-lrz"/>
+                            <constraint firstItem="fDt-k3-gGn" firstAttribute="trailing" secondItem="at8-No-U5J" secondAttribute="trailing" constant="20" id="yWO-mZ-3rA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CGS-aF-vV6"/>
                     <connections>
