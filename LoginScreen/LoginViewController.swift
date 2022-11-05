@@ -27,10 +27,12 @@ class LoginViewController: UIViewController {
         loginTF.text = ""
         passwordTF.text = ""
     }
+    
 //    MARK: - Clearing Password field
     private func clearPassField() {
         passwordTF.text = ""
     }
+    
 //    MARK: - Buttons Action
 //    Нажатие кнопки логин
     @IBAction func loginButtonPressed() {
@@ -52,7 +54,7 @@ class LoginViewController: UIViewController {
 //    MARK: - Unwind
 //    "Перемотка" - набор действий при возврате к начальному экрану
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        let afterLoginVC = segue.source as? WelcomeViewController
+        let _ = segue.source as? WelcomeViewController
         clearFields()
     }
 }
@@ -66,6 +68,7 @@ extension LoginViewController {
         alert.addAction(UIAlertAction(title: "Ok", style: .default))
     }
 }
+
 //MARK: - Hide Keyboard
 // Функция для скрытия экранной клавиатуры
 extension LoginViewController {
