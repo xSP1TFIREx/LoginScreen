@@ -82,7 +82,7 @@
                     <connections>
                         <outlet property="loginTF" destination="yJ5-Fs-O0K" id="ikE-AA-HMS"/>
                         <outlet property="passwordTF" destination="GEd-di-JCa" id="cfr-cE-qQN"/>
-                        <segue destination="Qbg-aA-HNq" kind="presentation" identifier="GoToNextScreen" id="uVC-Au-UY7"/>
+                        <segue destination="Qbg-aA-HNq" kind="presentation" identifier="GoToNextScreen" modalPresentationStyle="fullScreen" id="uVC-Au-UY7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -94,7 +94,7 @@
             <objects>
                 <viewController id="Qbg-aA-HNq" customClass="WelcomeViewController" customModule="LoginScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MhY-ct-2ea">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="at8-No-U5J">
@@ -104,13 +104,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99b-Wn-00C">
-                                <rect key="frame" x="134.66666666666666" y="523" width="123.99999999999997" height="56"/>
+                                <rect key="frame" x="134.66666666666666" y="558" width="123.99999999999997" height="56"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Return">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="returnButtonPressed" destination="Qbg-aA-HNq" eventType="touchUpInside" id="USq-0m-bbK"/>
+                                    <segue destination="K7q-Tc-OLa" kind="unwind" unwindAction="unwindFor:" id="N1v-A1-ocZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -127,7 +128,6 @@
                     <navigationItem key="navigationItem" id="CGS-aF-vV6"/>
                     <connections>
                         <outlet property="userNameLabel" destination="at8-No-U5J" id="Aoe-5e-8Wf"/>
-                        <segue destination="K7q-Tc-OLa" kind="unwind" unwindAction="unwindFor:" id="B9m-kh-nT9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ot1-ty-oDM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
