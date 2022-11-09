@@ -14,7 +14,11 @@
 		68A0E2A02915198C0028D216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A0E29F2915198C0028D216 /* Assets.xcassets */; };
 		68A0E2A32915198C0028D216 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68A0E2A12915198C0028D216 /* LaunchScreen.storyboard */; };
 		68A0E2AB29151D6A0028D216 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A0E2AA29151D6A0028D216 /* WelcomeViewController.swift */; };
-		68D48777291550A100E8810F /* Joke.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 68D48776291550A100E8810F /* Joke.jpeg */; };
+		68D487A8291AEAFE00E8810F /* UserBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D487A7291AEAFE00E8810F /* UserBrain.swift */; };
+		68D487AB291AF14D00E8810F /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D487AA291AF14D00E8810F /* MainTabBarViewController.swift */; };
+		68D487AD291AF18B00E8810F /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D487AC291AF18B00E8810F /* FirstScreenViewController.swift */; };
+		68D487AF291AF1B500E8810F /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D487AE291AF1B500E8810F /* SecondScreenViewController.swift */; };
+		68D487B1291BC90400E8810F /* TheBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D487B0291BC90400E8810F /* TheBioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +31,11 @@
 		68A0E2A22915198C0028D216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68A0E2A42915198C0028D216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68A0E2AA29151D6A0028D216 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		68D48776291550A100E8810F /* Joke.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Joke.jpeg; sourceTree = "<group>"; };
+		68D487A7291AEAFE00E8810F /* UserBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBrain.swift; sourceTree = "<group>"; };
+		68D487AA291AF14D00E8810F /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		68D487AC291AF18B00E8810F /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
+		68D487AE291AF1B500E8810F /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
+		68D487B0291BC90400E8810F /* TheBioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +68,61 @@
 		68A0E2952915198B0028D216 /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
-				68A0E2962915198B0028D216 /* AppDelegate.swift */,
-				68A0E2982915198B0028D216 /* SceneDelegate.swift */,
-				68A0E29A2915198B0028D216 /* LoginViewController.swift */,
-				68A0E2AA29151D6A0028D216 /* WelcomeViewController.swift */,
-				68A0E29C2915198B0028D216 /* Main.storyboard */,
-				68A0E29F2915198C0028D216 /* Assets.xcassets */,
-				68A0E2A12915198C0028D216 /* LaunchScreen.storyboard */,
 				68A0E2A42915198C0028D216 /* Info.plist */,
-				68D48776291550A100E8810F /* Joke.jpeg */,
+				68D487A9291AEB1100E8810F /* Model */,
+				68D487A3291ADE0300E8810F /* App */,
+				68D487A6291ADE5400E8810F /* ViewControllers */,
+				68D487A5291ADE1E00E8810F /* Storyboards */,
+				68D487A4291ADE1100E8810F /* Sources */,
 			);
 			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		68D487A3291ADE0300E8810F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				68A0E2962915198B0028D216 /* AppDelegate.swift */,
+				68A0E2982915198B0028D216 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		68D487A4291ADE1100E8810F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				68A0E29F2915198C0028D216 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		68D487A5291ADE1E00E8810F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				68A0E29C2915198B0028D216 /* Main.storyboard */,
+				68A0E2A12915198C0028D216 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		68D487A6291ADE5400E8810F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				68A0E29A2915198B0028D216 /* LoginViewController.swift */,
+				68A0E2AA29151D6A0028D216 /* WelcomeViewController.swift */,
+				68D487AA291AF14D00E8810F /* MainTabBarViewController.swift */,
+				68D487AC291AF18B00E8810F /* FirstScreenViewController.swift */,
+				68D487AE291AF1B500E8810F /* SecondScreenViewController.swift */,
+				68D487B0291BC90400E8810F /* TheBioViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		68D487A9291AEB1100E8810F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68D487A7291AEAFE00E8810F /* UserBrain.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +186,6 @@
 				68A0E2A32915198C0028D216 /* LaunchScreen.storyboard in Resources */,
 				68A0E2A02915198C0028D216 /* Assets.xcassets in Resources */,
 				68A0E29E2915198B0028D216 /* Main.storyboard in Resources */,
-				68D48777291550A100E8810F /* Joke.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,10 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68D487A8291AEAFE00E8810F /* UserBrain.swift in Sources */,
 				68A0E29B2915198B0028D216 /* LoginViewController.swift in Sources */,
 				68A0E2972915198B0028D216 /* AppDelegate.swift in Sources */,
+				68D487AB291AF14D00E8810F /* MainTabBarViewController.swift in Sources */,
+				68D487AF291AF1B500E8810F /* SecondScreenViewController.swift in Sources */,
+				68D487AD291AF18B00E8810F /* FirstScreenViewController.swift in Sources */,
 				68A0E2992915198B0028D216 /* SceneDelegate.swift in Sources */,
 				68A0E2AB29151D6A0028D216 /* WelcomeViewController.swift in Sources */,
+				68D487B1291BC90400E8810F /* TheBioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

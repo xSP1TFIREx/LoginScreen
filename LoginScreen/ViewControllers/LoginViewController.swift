@@ -6,8 +6,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
-    private let login = "Anna"
-    private let password = "anna2022"
+    private let user = User.getUserInfo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +35,7 @@ class LoginViewController: UIViewController {
 //    MARK: - Buttons Action
 //    Нажатие кнопки логин
     @IBAction func loginButtonPressed() {
-        loginTF.text == login && passwordTF.text == password ?
+        loginTF.text == user.login && passwordTF.text == user.password ?
         performSegue(withIdentifier: "GoToNextScreen", sender: self) :
         showAlert(withTitle: "Error", andMessage: "Wrong username or password"); clearPassField()
     }
